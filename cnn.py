@@ -84,7 +84,7 @@ if __name__ == "__main__":
     test_vectors, test_labels = csv_to_model_data(test_csv)
 
     print("Creating model...")
-    model = get_model(train_vectors, train_labels, True)
+    model = get_model(train_vectors, train_labels, False)
 
     print("Making predictions for testing data...")
     predictions = model.predict(test_vectors)
